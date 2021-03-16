@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cv project eduard perez | SLee Dw</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+        
+        body {
+            background: url(https://scontent.fbru2-1.fna.fbcdn.net/v/t31.0-8/18671735_1826513624032187_6319843983554103127_o.jpg?_nc_cat=111&ccb=2&_nc_sid=19026a&_nc_ohc=B5iyEs9r31gAX9-ayl7&_nc_ht=scontent.fbru2-1.fna&oh=9cef1f73fc75c1a4c2a941c0674fcaee&oe=5FC13741);
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+        }
+        
+        .capa {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+        
+        .header {
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .container .btn-menu,
+        .logo {
+            float: left;
+            line-height: 100px;
+        }
+        
+        .container .btn-menu label {
+            color: #fff;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        
+        .logo h1 {
+            color: #fff;
+            font-weight: 400;
+            font-size: 22px;
+            margin-left: 10px;
+        }
+        
+        .container .menu {
+            float: right;
+            line-height: 100px;
+        }
+        
+        .container .menu a {
+            display: inline-block;
+            padding: 15px;
+            line-height: normal;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            font-size: 15px;
+            margin-right: 20px;
+        }
+        
+        .container .menu a:hover {
+            border-bottom: 2px solid #c7c7c7;
+            padding-bottom: 5px;
+        }
+        /*Einde van stijlen voor de koptekst*/
+        /*Lateraal menu*/
+        
+        #btn-menu {
+            display: none;
+        }
+        
+        .container-menu {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            transition: all 500ms ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        #btn-menu:checked~.container-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .cont-menu {
+            width: 100%;
+            max-width: 250px;
+            background: #1c1c1c4d;
+            height: 100vh;
+            position: relative;
+            transition: all 500ms ease;
+            transform: translateX(-100%);
+        }
+        
+        #btn-menu:checked~.container-menu .cont-menu {
+            transform: translateX(0%);
+        }
+        
+        .cont-menu nav {
+            transform: translateY(15%);
+        }
+        
+        .cont-menu nav a {
+            display: block;
+            text-decoration: none;
+            padding: 20px;
+            color: #c7c7c7;
+            border-left: 5px solid transparent;
+            transition: all 400ms ease;
+        }
+        
+        .cont-menu nav a:hover {
+            border-left: 5px solid #c7c7c7;
+            background: #1f1f1f;
+        }
+        
+        .cont-menu label {
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        /*Einde van lateraal menu*/
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>Over Mij</h1>
+            </div>
+            <nav class="menu">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#">CURRICULUM VITAE VAN EDUARD PEREZ</a>
+
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="Aboutme.html">Een Beetje Over Mij</a>
+                <a href="Digital_CV.html">Digitaal CV</a>
+                <a href="galeryedd.html">Galerij</a>
+                <a href="contact.html">Contact</a>
+                <a href="Sociaal.html">Sociale netwerken</a>
+                <a href="hobbys.html">Mijn Hobbys</a>
+
+
+
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #afd1db;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+p {
+    font: 1em sans-serif;
+    text-align: justify;
+    line-height: 30px;
+}
+
+p2 {
+    text-align: 25px;
+}
